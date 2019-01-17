@@ -364,7 +364,7 @@ open class ButtonBarPagerTabStripViewController: PagerTabStripViewController, Pa
     open func configureCell(_ cell: ButtonBarViewCell, indicatorInfo: IndicatorInfo) {
     }
 
-    private func calculateWidths() -> [CGFloat] {
+    public func calculateWidths() -> [CGFloat] {
         let flowLayout = buttonBarView.collectionViewLayout as! UICollectionViewFlowLayout // swiftlint:disable:this force_cast
         let numberOfCells = viewControllers.count
 
